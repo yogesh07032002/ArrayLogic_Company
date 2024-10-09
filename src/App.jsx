@@ -1,26 +1,26 @@
-import About from './components/About'
-import Banner from './components/Banner'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Process from './components/Process'
-import Services from './components/Services'
-import TechStack from './components/TechStack'
+import { Route, Routes } from "react-router-dom";
+
+import Abouts from "./Abouts/Abouts";
+import Careers from './careers/Careers'
+import Contacts from "./Contacts/Contacts";
+import Home from "./Home/Home";
+import Industries from "./Industries/Industries";
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Banner/>
-      <About/>
-      <Services/>
-    <TechStack/>
+      <Routes>
+       <Route path="/" element={<Home/>}></Route>
+       <Route path="/Career" element={<Careers/>}></Route>
+       <Route path="/Industry" element={<Industries/>}></Route>
+       <Route path="/Contact" element={<Contacts/>}></Route>
+       <Route path="/About" element={<Abouts/>}></Route>
+        
+       
 
-      <Process/>
-      <Contact/>
-      <Footer/>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

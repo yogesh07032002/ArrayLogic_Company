@@ -1,5 +1,4 @@
 import About1 from "../../public/About1.png";
-import React from "react";
 
 function About() {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { TechstackList } from "../utils/TechStack";
 
 function TechStack() {
@@ -11,6 +10,7 @@ function TechStack() {
         </div>
         <div className=" ">
           {TechstackList.map(tech=>(
+            // eslint-disable-next-line react/jsx-key
             <h1>{tech.name}</h1>
           ))}
         </div>

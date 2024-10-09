@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   const [sticky,setSticky]=useState(false)
@@ -19,10 +19,10 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a >Home</a>
+        <a href="/" >Home</a>
       </li>
       <li>
-        <a>About</a>
+        <a href="/About">About</a>
       </li>
       <li>
         <a>Services</a>
@@ -31,13 +31,13 @@ function Navbar() {
         <a>Process</a>
       </li>
       <li>
-        <a>Industries</a>
+        <a href="/Industry">Industries</a>
       </li>
       <li>
-        <a>Carrier</a>
+        <a href="/Career">Career</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/Contact">Contact</a>
       </li>
     </>
   );
