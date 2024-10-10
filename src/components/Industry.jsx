@@ -45,7 +45,7 @@ function Industry() {
   };
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto   md:px-0  md:pb-20">
+      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-slate-100">
         <div className="mt-20 px-2 ">
           <img className="" src={IndustryPic} alt="Comming Soon"></img>
         </div>
@@ -67,7 +67,7 @@ function Industry() {
           </p>
         </div>
         <div>
-        <div>
+        <div className="mt-10 ml-3 md:ml-20">
           <Slider {...settings}>
             {filterData.map((item) => (
               <Cards item={item} key={item.id} />

@@ -25,10 +25,10 @@ function Navbar() {
         <a href="/About">About</a>
       </li>
       <li>
-        <a>Services</a>
+        <a href="/Services">Services</a>
       </li>
       <li>
-        <a>Process</a>
+        <a href="/Process">Process</a>
       </li>
       <li>
         <a href="/Industry">Industries</a>

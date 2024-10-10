@@ -5,6 +5,8 @@ import Careers from './careers/Careers'
 import Contacts from "./Contacts/Contacts";
 import Home from "./Home/Home";
 import Industries from "./Industries/Industries";
+import Processs from "./components/Processs";
+import Services from "./Services/Services";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
        <Route path="/Industry" element={<Industries/>}></Route>
        <Route path="/Contact" element={<Contacts/>}></Route>
        <Route path="/About" element={<Abouts/>}></Route>
+       <Route path="/Services" element={<Services/>}></Route>
+       <Route path="/Process" element={<Processs/>}></Route>
         
        
 

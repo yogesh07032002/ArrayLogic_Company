@@ -5,7 +5,7 @@ function Call() {
   return (
     <>
     
-      <div>
+      <div className='bg-slate-100'>
         <div>
         <div className="mt-20 ">
           <img src={ContactPage} alt="Comming Soon"></img>
