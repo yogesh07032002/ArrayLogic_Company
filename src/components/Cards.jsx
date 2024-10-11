@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+
+import { Link } from "react-router-dom";
+
 function Cards({item}) {
   return (
     <>
@@ -13,9 +17,11 @@ function Cards({item}) {
           <div className="card-body items-center text-center">
             <h2 className="card-title">{item.name}</h2>
             <p>{item.title}</p>
-            <div className="card-actions">
+           <Link to="/Contact" target="_blank">
+           <div className="card-actions">
               <button className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Lets Connect</button>
             </div>
+           </Link>
           </div>
         </div>
       </div>

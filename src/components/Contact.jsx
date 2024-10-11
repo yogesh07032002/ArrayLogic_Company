@@ -1,4 +1,5 @@
 import Connect from '../../public/Connect.png';
+import ScrollToTop from "react-scroll-to-top";
 
 function Contact() {
   return (
@@ -66,6 +67,8 @@ function Contact() {
           </form>
         </div>
       </div>
+      <ScrollToTop smooth className='' />
+      
     </>
   );
 }

@@ -18,6 +18,7 @@ function Home() {
       <Process />
       <Contact />
       <Footer />
+      
     </>
   );
 }

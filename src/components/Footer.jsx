@@ -1,16 +1,38 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div className="ml-0">
       <footer className="footer bg-base-200 text-base-content p-10">
         <nav>
           <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Web Development</a>
-          <a className="link link-hover">Software Development</a>
-          <a className="link link-hover">Application Development</a>
-          <a className="link link-hover">Digital Marketing</a>
-          <a className="link link-hover">Cloud Services</a>
-          <a className="link link-hover">SEO</a>
-          <a className="link link-hover">Data Solution</a>
+          <Link to='/Services' target="_blank">
+            <a className="link link-hover">Web Development</a>
+          </Link>
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">Software Development</a>
+          </Link>
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">Application Development</a>
+          </Link>
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">Digital Marketing</a>
+          </Link>
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">Cloud Services</a>
+          </Link>
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">SEO</a>
+          </Link>
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">Data Solution</a>
+          </Link>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
