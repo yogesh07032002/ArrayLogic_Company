@@ -36,10 +36,19 @@ function Footer() {
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+         
+          <Link to='/About' target="_blank"> <a className="link link-hover">About Us</a></Link>
+
+          
+          <Link to='/Contact' target="_blank"> <a className="link link-hover">Contact</a></Link>
+
+          
+         <Link to='/Career' target="_blank"> <a className="link link-hover">Jobs</a></Link>
+         
+          <Link to='/Services' target="_blank">
+            {" "}
+            <a className="link link-hover">Press kit</a>
+          </Link>
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>

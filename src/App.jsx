@@ -7,11 +7,12 @@ import Home from "./Home/Home";
 import Industries from "./Industries/Industries";
 import Processs from "./components/Processs";
 import Services from "./Services/Services";
+import {Toaster} from 'react-hot-toast'
 
 function App() {
   return (
     <>
-      <Routes>
+     <div> <Routes>
        <Route path="/" element={<Home/>}></Route>
        <Route path="/Career" element={<Careers/>}></Route>
        <Route path="/Industry" element={<Industries/>}></Route>
@@ -19,10 +20,8 @@ function App() {
        <Route path="/About" element={<Abouts/>}></Route>
        <Route path="/Services" element={<Services/>}></Route>
        <Route path="/Process" element={<Processs/>}></Route>
-        
-       
-
-      </Routes>
+      </Routes></div>
+      <Toaster/>
     </>
   );
 }

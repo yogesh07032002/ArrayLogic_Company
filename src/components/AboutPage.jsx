@@ -1,4 +1,5 @@
 import AboutPic from "../../public/AboutPic.jpg";
+import ScrollToTop from "react-scroll-to-top";
 
 function AboutPage() {
   return (
@@ -55,6 +56,17 @@ function AboutPage() {
           </div>
         </div>
       </div>
+      <ScrollToTop
+        smooth
+        className=""
+        style={{
+          backgroundColor: "blue",
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
     </>
   );
 }

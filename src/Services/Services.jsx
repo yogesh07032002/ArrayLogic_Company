@@ -1,5 +1,6 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import ScrollToTop from "react-scroll-to-top";
 import ServicePage from '../components/ServicePage'
 
 function Services() {
@@ -8,6 +9,17 @@ function Services() {
     <Navbar/>
     <div ><ServicePage/></div>
     <Footer/>
+    <ScrollToTop
+        smooth
+        className=""
+        style={{
+          backgroundColor: "blue",
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
     </>
   )
 }

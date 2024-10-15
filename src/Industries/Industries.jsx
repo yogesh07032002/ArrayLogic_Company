@@ -1,6 +1,7 @@
 import Footer from '../components/Footer'
 import Industry from '../components/Industry'
 import Navbar from '../components/Navbar'
+import ScrollToTop from "react-scroll-to-top";
 
 function careers() {
   return (
@@ -10,6 +11,17 @@ function careers() {
         <Industry/>
     </div>
     <Footer/>
+    <ScrollToTop
+        smooth
+        className=""
+        style={{
+          backgroundColor: "blue",
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
     </>
   )
 }
