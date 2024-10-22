@@ -10,7 +10,7 @@ import ServicePic7 from "../../public/ServicePic7.png";
 function ServicePage() {
   return (
     <>
-      <div className="bg-slate-200">
+      <div className="bg-white text-black">
         <div className="text-2xl md:text-4xl font-bold text-center mt-20 ">
           <img src={ServicePage2} className="" alt="Hey, we are LiftLogic" />
         </div>

@@ -4,7 +4,7 @@ import ScrollToTop from "react-scroll-to-top";
 function AboutPage() {
   return (
     <>
-      <div className="bg-slate-100">
+      <div className="bg-white text-black">
         <div className="text-2xl md:text-4xl font-bold text-center mt-20 ">
           <img src={AboutPic} className="" alt="Hey, we are LiftLogic" />
         </div>

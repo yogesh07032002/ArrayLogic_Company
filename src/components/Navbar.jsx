@@ -76,7 +76,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className=" text-2xl font-bold cursor-pointer">LiftLogic</a>
+            <a className=" text-2xl font-bold cursor-pointer">ArrayLogic</a>
           </div>
           <div className="navbar-end px-0">
        

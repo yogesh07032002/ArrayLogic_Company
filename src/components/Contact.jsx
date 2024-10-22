@@ -40,9 +40,9 @@ function Contact() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row  mt-0 pb-10">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row  mt-10 md:mt-0 pb-10 bg-white">
         {/* Image Section */}
-        <div className="w-full md:w-1/2 mt-0 ">
+        <div className=" hidden md:block w-full md:w-1/2 mt-0 ">
           <img
             src={Connect}
             className=" md:block w-92 h-92"
@@ -52,7 +52,7 @@ function Contact() {
 
         {/* Form Section */}
         <div className="w-full md:w-1/2 mt-12 md:mt-36">
-          <h1 className="text-xl md:text-4xl font-bold text-center">Contact Us</h1>
+          <h1 className="text-xl md:text-4xl font-bold text-center text-orange-500">Contact Us</h1>
 
           <form onSubmit={handleSubmit} className="contact-form mt-8">
             <label htmlFor="name">Name</label>

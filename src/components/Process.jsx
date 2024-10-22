@@ -14,7 +14,7 @@ function Process() {
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 mt-20 bg-slate-300">
         <div>
-          <h1 className="text-xl md:text-4xl font-bold text-center pt-5 text-orange-400">
+          <h1 className="text-2xl md:text-4xl font-bold text-center pt-5 text-orange-500">
             Process
           </h1>
         </div>

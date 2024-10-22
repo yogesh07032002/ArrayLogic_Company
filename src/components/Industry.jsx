@@ -45,7 +45,7 @@ function Industry() {
   };
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-slate-100">
+      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-white">
         <div className="mt-20 px-2 ">
           <img className="" src={IndustryPic} alt="Comming Soon"></img>
         </div>

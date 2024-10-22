@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="ml-0 ">
-      <footer className="footer  text-base-content p-10 bg-slate-300" >
+      <footer className="footer   p-10 bg-base-200 text-black" >
         <nav>
           <h6 className="footer-title">Services</h6>
           <Link to='/Services' target="_blank">
@@ -57,7 +57,7 @@ function Footer() {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4 bg-slate-300">
+      <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
         <aside className="grid-flow-col items-center">
           <svg
             width="24"

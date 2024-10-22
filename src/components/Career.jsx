@@ -3,7 +3,7 @@ import CareerPic from "../../public/CareerPic.jpg";
 function Career() {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-slate-100">
+      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-white text-black">
         <div className="mt-20 ">
           <img src={CareerPic} alt="Comming Soon"></img>
         </div>

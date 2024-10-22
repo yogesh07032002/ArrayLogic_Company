@@ -40,7 +40,7 @@ function Contact() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row pb-10 mt-20">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row pb-10 mt-10 bg-white">
         {/* Image Section */}
         <div className="w-full md:w-1/2 mt-0 md:mt-0">
           <img
