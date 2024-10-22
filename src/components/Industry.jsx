@@ -50,16 +50,16 @@ function Industry() {
           <img className="" src={IndustryPic} alt="Comming Soon"></img>
         </div>
         <div>
-          <h1 className="text-2xl md:text-4xl font-bold text-center mt-10 md:mt-15">
+          <h1 className="text-2xl md:text-4xl font-bold text-center mt-10 md:mt-15 text-orange-500">
           Our Industry Expertise
           </h1>
-          <p className="mt-5 px-5">
-            LiftLogic Softwares Pvt. Ltd. is a forward-thinking IT company
+          <p className="mt-5 px-5 text-rose-500">
+          ArrayLogic Softwares Pvt. Ltd. is a forward-thinking IT company
             delivering innovative solutions across multiple industries. From
             cutting-edge software development and cloud computing to data
             analytics, artificial intelligence, and machine learning, we provide
             customized IT services that help businesses thrive in the digital
-            age. Our expertise spans industries such as healthcare, finance,
+            age.<br></br><br/> Our expertise spans industries such as healthcare, finance,
             retail, education, and more, empowering organizations to streamline
             operations, enhance security, and drive growth through technology.
             Partner with us to leverage the power of IT in transforming your

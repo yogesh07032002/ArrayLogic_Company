@@ -1,7 +1,7 @@
 import CareerPic from '../../public/CareerPic.jpg'
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import ProcessPic from '../../public/ProcessPic.png'
+import ProcessPic from '../../public/ProcessPic.jpg'
 
 function Processs() {
   return <>

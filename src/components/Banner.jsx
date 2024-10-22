@@ -3,18 +3,19 @@ import banner from "../../public/Banner.png";
 function Banner() {
   return (
     <>
-      <div className="max-w-screen-2xl container max-auto md:px-25 px-4 flex flex-col md:flex-row my-10 mt-15  md:mt-20">
-        <div className="w-full md:w-1/2 mt-10 md:mt-10">
+      <div className="max-w-screen-2xl container max-auto md:px-25 px-4 flex flex-col md:flex-row my-10 mt-20   bg-slate-200">
+        
+        <div className="w-full md:w-1/2 mt-0 md:mt-10">
           <div className="space-y-6 mt-10 md:ml-12">
             <h1 className=" text-xl  md:text-4xl font-bold ">
               Accelerate your growth trajectory with{" "}
-              <span className="text-orange-600">LiftLogic’s</span> innovative{" "}
+              <span className="text-orange-600">ArrayLogic’s</span> innovative{" "}
               <span className="text-orange-600">IT Commandos.</span>
             </h1>
           </div>
           <div className="mt-5 md:ml-12">
             <p>
-              At LiftLogic Softwares Pvt. Ltd., we specialize in delivering
+              At ArryLogic Softwares Pvt. Ltd. we specialize in delivering
               innovative and efficient solutions for web development, software
               development, and application development. Our team is dedicated to
               helping businesses streamline their digital presence and achieve

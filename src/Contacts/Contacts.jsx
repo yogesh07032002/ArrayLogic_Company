@@ -6,6 +6,7 @@ function Contacts() {
   return (
     <>
     <Navbar/>
+    
     <div ><Call/></div>
     <Footer/>
     </>

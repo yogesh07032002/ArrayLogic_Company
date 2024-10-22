@@ -81,7 +81,7 @@ function Navbar() {
           <div className="navbar-end px-0">
        
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-5 mx-24">{ navItems }</ul>
+            <ul className="menu menu-horizontal px-5 mx-24 font-bold " >{ navItems }</ul>
           </div>
           <div className="">
             <a className="bg-violet-700 text-white px-4 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer" target="_blank" href="https://api.whatsapp.com/send?phone=7620162336">Contact</a>

@@ -45,12 +45,12 @@ function Services() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
-        <div>
-          <h1 className="text-xl md:text-4xl font-bold text-center">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4   ">
+       
+          <h1 className="text-2xl md:text-4xl font-bold text-center md:mb-5 text-orange-500">
             Services
           </h1>
-        </div>
+      
 
         <div>
           <Slider {...settings}>

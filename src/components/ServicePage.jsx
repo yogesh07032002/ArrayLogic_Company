@@ -15,16 +15,16 @@ function ServicePage() {
           <img src={ServicePage2} className="" alt="Hey, we are LiftLogic" />
         </div>
         <div className="space-y-6 text-center mt-10">
-          <h1 className="text-xl md:text-4xl font-bold">Services</h1>
+          <h1 className="text-4xl font-bold text-orange-500">Services</h1>
         </div>
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-600 ">
+              <h2 className="font-bold text-2xl  text-red-500 text-center ">
                 Web Development
               </h2>
               <p className=" mt-5 ">
-                At LiftLogic Softwares Pvt. Ltd. our expert engineers are
+                At ArrayLogic Softwares Pvt. Ltd. our expert engineers are
                 dedicated to guiding customers through their digital
                 transformation journey. We are not just a software company; we
                 offer profound technology expertise, excellent delivery
@@ -51,11 +51,11 @@ function ServicePage() {
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row-reverse">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl text-red-600">
+              <h2 className="font-bold text-2xl text-red-500 text-center">
                 Software Development
               </h2>
               <p className="mt-5">
-                At LiftLogic Softwares Pvt. Ltd., we offer full-cycle software
+                At ArrayLogic Softwares Pvt. Ltd., we offer full-cycle software
                 development services designed to bring your unique business
                 ideas to life. Our team of experienced developers specializes in
                 building high-performance, scalable, and secure software
@@ -83,11 +83,11 @@ function ServicePage() {
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-600 ">
+              <h2 className="font-bold text-2xl  text-red-500 text-center">
                 Application Development
               </h2>
               <p className=" mt-5 ">
-                At LiftLogic Softwares Pvt. Ltd., we specialize in crafting
+                At ArrayLogic Softwares Pvt. Ltd., we specialize in crafting
                 custom applications that align perfectly with your business
                 needs. Our application development services cover everything
                 from initial concept to final deployment, ensuring that the
@@ -111,16 +111,16 @@ function ServicePage() {
           </div>
         </div>
 
-        <hr className="border-2 border-orange-500 " />
+        <hr className="border-2 border-orange-500 text-center " />
 
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row-reverse">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl text-red-600">
+              <h2 className="font-bold text-2xl text-red-500 text-center">
                 Digital Marketing
               </h2>
               <p className="mt-5">
-                At LiftLogic Softwares Pvt. Ltd., we offer comprehensive digital
+                At ArrayLogic Softwares Pvt. Ltd., we offer comprehensive digital
                 marketing services designed to elevate your brand’s online
                 presence and drive meaningful engagement. From search engine
                 optimization (SEO) to social media marketing, pay-per-click
@@ -149,11 +149,11 @@ function ServicePage() {
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-600 ">
+              <h2 className="font-bold text-2xl  text-red-500 text-center">
                 Cloud Services
               </h2>
               <p className=" mt-5 ">
-                At LiftLogic Softwares Pvt. Ltd., we provide top-tier cloud
+                At ArrayLogic Softwares Pvt. Ltd., we provide top-tier cloud
                 services that enable your business to scale, innovate, and
                 remain competitive. Our cloud solutions include infrastructure
                 as a service (IaaS), platform as a service (PaaS), and software
@@ -182,11 +182,11 @@ function ServicePage() {
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row-reverse">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl text-red-600">
+              <h2 className="font-bold text-2xl text-red-500 text-center">
                 CRM Solutions{" "}
               </h2>
               <p className="mt-5">
-                At LiftLogic Softwares Pvt. Ltd., we understand that effective
+                At ArrayLogic Softwares Pvt. Ltd., we understand that effective
                 customer relationship management is key to driving business
                 success. Our CRM solutions are designed to help you build and
                 maintain strong relationships with your customers by
@@ -215,11 +215,11 @@ function ServicePage() {
         <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-600 ">
+              <h2 className="font-bold text-2xl  text-red-500 text-center">
                 Data Solutions
               </h2>
               <p className=" mt-5 ">
-                At LiftLogic Softwares Pvt. Ltd., we offer comprehensive data
+                At ArrayLogic Softwares Pvt. Ltd., we offer comprehensive data
                 solutions that empower businesses to harness the full potential
                 of their data assets. Our services include data integration,
                 data warehousing, data analytics, and business intelligence, all
@@ -242,7 +242,7 @@ function ServicePage() {
             />
           </div>
         </div>
-        <hr className="border-2 border-orange-500 " />
+        <hr className="border-2 border-orange-500 mt-5 " />
       </div>
     </>
   );

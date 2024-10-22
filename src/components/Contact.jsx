@@ -1,4 +1,4 @@
-import Connect from "../../public/Connect.png";
+import Connect from "../../public/Connect.jpg";
 import ScrollToTop from "react-scroll-to-top";
 import emailjs from '@emailjs/browser';
 import toast from "react-hot-toast";
@@ -40,19 +40,19 @@ function Contact() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row bg-slate-200 mt-0 pb-10">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row  mt-0 pb-10">
         {/* Image Section */}
-        <div className="w-full md:w-1/2 mt-12 md:mt-36">
+        <div className="w-full md:w-1/2 mt-0 ">
           <img
             src={Connect}
-            className="hidden md:block w-92 h-92"
+            className=" md:block w-92 h-92"
             alt="Hey, we are LiftLogic"
           />
         </div>
 
         {/* Form Section */}
         <div className="w-full md:w-1/2 mt-12 md:mt-36">
-          <h1 className="text-xl md:text-4xl font-bold">Contact Us</h1>
+          <h1 className="text-xl md:text-4xl font-bold text-center">Contact Us</h1>
 
           <form onSubmit={handleSubmit} className="contact-form mt-8">
             <label htmlFor="name">Name</label>
@@ -64,7 +64,7 @@ function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full px-3 py-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 mb-4 border border-red-700 rounded-lg focus:outline-none focus:border-blue-600"
             />
 
             <label htmlFor="email">Email</label>
@@ -76,7 +76,7 @@ function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-3 py-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 mb-4 border border-red-700 rounded-lg focus:outline-none focus:border-blue-500"
             />
 
             <label htmlFor="message">Message</label>
@@ -88,7 +88,7 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="w-full px-3 py-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 mb-4 border border-red-700 rounded-lg focus:outline-none focus:border-blue-500"
             ></textarea>
 
             <button
