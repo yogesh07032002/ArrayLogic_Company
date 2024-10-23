@@ -10,7 +10,7 @@ import ServicePic7 from "../../public/ServicePic7.png";
 function ServicePage() {
   return (
     <>
-      <div className="bg-white text-black">
+      <div className="bg-white text-black ">
         <div className="text-2xl md:text-4xl font-bold text-center mt-20 ">
           <img src={ServicePage2} className="" alt="Hey, we are LiftLogic" />
         </div>
@@ -113,7 +113,7 @@ function ServicePage() {
 
         <hr className="border-2 border-orange-500 text-center " />
 
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row-reverse">
+        <div className="max-w-screen-2xl container mx-auto md:px-20 px-10 flex flex-col md:flex-row-reverse">
           <div className="w-full md:w-1/2 mt-0 md:mt-10">
             <div className="mt-8">
               <h2 className="font-bold text-2xl text-red-500 text-center">

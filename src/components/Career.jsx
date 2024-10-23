@@ -28,12 +28,24 @@ function Career() {
             <p className="text-center text-2xl font-bold mt-5 md:mt-5 ">
               Send Your CV 👇<br></br>
             </p>
-            <div className=" md:flex md:flex-row md:justify-between w-full md:px-40 md:mt-10">
+            {/* <div className="md:flex md:flex-row md:justify-between w-full md:px-40 md:mt-10">
               <div className="md:text-left mt-3 text-red-700 md:mt-0 font-bold text-center">
                 📧&nbsp;hr@arraylogic.com
               </div>
-              <div className="  md:text-right mt-3 md:mb-0 text-red-700 font-bold text-center pb-5 md:pb-0">
+              <div className="md:text-right mt-3 md:mb-0 text-red-700 font-bold text-center pb-5 md:pb-0">
                 📞+917620162336
+              </div>
+            </div> */}
+            <div className="mt-5 w-full md:flex md:flex-row md:justify-between md:px-40 md:mt-7 ">
+              <div className="border-2 border-black p-5 rounded-md w-full text-center md:text-left mt-3 text-red-700 md:mt-0  ">
+                <div
+                  className="text-orange-500 text-2xl "
+                >
+                  📧&nbsp;hr@arraylogic.in
+                </div>
+                <div className="text-orange-500 text-2xl  md:text-right mt-0 md:mb-0  text-center pb-5 md:pb-0">
+                  📞+917620162336
+                </div>
               </div>
             </div>
           </div>

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import logoo from "../../public/logoo.png";
+
 function Navbar() {
   const [sticky,setSticky]=useState(false)
   useEffect(()=>{
@@ -43,7 +45,7 @@ function Navbar() {
   );
   return (
     <>
-      <div className={`max-w-screen-2xl container max-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${
+      <div className={`max-w-screen-2xl container max-auto md:px-15 px-5 fixed top-0 left-0 right-0 z-50 p-3  ${
         sticky
         ? "sticky-navbar shadow-md bg-base-300 duration-300 transition-all ease-in-out":""
         }`}>
@@ -72,11 +74,12 @@ function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-52 p-2 shadow">
                 {navItems}
               </ul>
             </div>
-            <a className=" text-2xl font-bold cursor-pointer">ArrayLogic</a>
+            <a className=" text-2xl font-bold cursor-pointer"><img src={logoo} className="w-40 md:w-48 md:ml-7 h-auto" alt="Logo" />
+            </a>
           </div>
           <div className="navbar-end px-0">
        

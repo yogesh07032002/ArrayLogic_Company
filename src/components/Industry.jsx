@@ -67,7 +67,7 @@ function Industry() {
           </p>
         </div>
         <div>
-        <div className="mt-10 ml-3 md:ml-20">
+        <div className="mt-10 mb-14 md:mb-0  md:ml-20 px-10" >
           <Slider {...settings}>
             {filterData.map((item) => (
               <Cards item={item} key={item.id} />

@@ -6,8 +6,8 @@ function Cards({ item }) {
   return (
     <>
       <div>
-        <div className="card border-2 border-black w-96 shadow-xl bg-white ml-0 mr-auto">
-          <figure className="px-5 pt-5">
+        <div className="card border-2 border-black w-full sm:w-80 md:w-96 shadow-xl bg-white ml-0 mr-auto">
+          <figure className="px-3 pt-3">
             <img src={item.image} alt="Coming Soon" className="rounded-2xl" />
           </figure>
           <div className="card-body items-center text-center">

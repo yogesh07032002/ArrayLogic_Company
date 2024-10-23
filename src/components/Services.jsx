@@ -45,9 +45,9 @@ function Services() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4   ">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-10   ">
        
-          <h1 className="text-2xl md:text-4xl font-bold text-center md:mb-5 text-orange-500">
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-5 md:mb-9 text-orange-500">
             Services
           </h1>
       

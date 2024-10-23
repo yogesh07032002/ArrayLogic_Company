@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="ml-0 ">
-      <footer className="footer   p-10 bg-base-200 text-black" >
+      <footer className="footer   p-10 bg-base-200 text-white bg-black" >
         <nav>
-          <h6 className="footer-title">Services</h6>
+          <h6 className="footer-title text-white text-2xl">Services</h6>
           <Link to='/Services' target="_blank">
             <a className="link link-hover">Web Development</a>
           </Link>
@@ -35,7 +35,7 @@ function Footer() {
           </Link>
         </nav>
         <nav>
-          <h6 className="footer-title">Company</h6>
+          <h6 className="footer-title text-orange-500 text-2xl">Company</h6>
          
           <Link to='/About' target="_blank"> <a className="link link-hover">About Us</a></Link>
 
@@ -51,13 +51,13 @@ function Footer() {
           </Link>
         </nav>
         <nav>
-          <h6 className="footer-title">Legal</h6>
+          <h6 className="footer-title text-2xl text-blue-500">Legal</h6>
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+      <footer className="footer  border-base-300 border-t px-10 py-4 bg-black text-white">
         <aside className="grid-flow-col items-center">
           <svg
             width="24"
