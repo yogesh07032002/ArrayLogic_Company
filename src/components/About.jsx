@@ -34,6 +34,8 @@ function About() {
             src={about}
             className="w-92 h-92"
             alt="Hey We Are ArrayLogic"
+            
+            
           />
         </div>
       </div>
