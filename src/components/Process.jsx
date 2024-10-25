@@ -25,13 +25,13 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-red-500 font-bold text-center">
                 Requirement Gathering
                
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   The initial phase where we work closely with the client to
                   gather detailed requirements. This involves understanding
                   business goals, user needs, and technical constraints to
@@ -45,12 +45,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Planning & Analysis
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   A critical phase where we create a strategic roadmap for the
                   project. We perform a thorough analysis of the project scope,
                   define deliverables, set timelines, and allocate resources.
@@ -64,12 +64,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Design
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   In the design phase, we transform ideas into wireframes and
                   prototypes that reflect the desired user experience and
                   functionality. Our team focuses on creating visually
@@ -84,12 +84,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Development
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   This phase involves coding and building the software solution
                   based on the finalized design. Our development team uses
                   modern programming languages and frameworks to build scalable,
@@ -103,12 +103,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Testing
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   Rigorous testing is conducted to ensure that the product is
                   free of bugs, meets performance expectations, and adheres to
                   the specified requirements. This includes unit testing,
@@ -122,12 +122,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Deployment
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   Once the product has passed all quality checks, it is deployed
                   to the live environment. We handle the transition smoothly,
                   ensuring minimal downtime and seamless integration with
@@ -141,12 +141,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Monitoring & Support
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   After deployment, we continuously monitor the system to ensure
                   optimal performance. Our support team is available to address
                   any issues, provide troubleshooting, and respond to queries.
@@ -159,12 +159,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Maintenance & Updates
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   Post-launch, we provide ongoing maintenance to ensure the
                   solution remains up-to-date, secure, and efficient. This
                   includes regular updates to accommodate new features,
@@ -178,12 +178,12 @@ function Process() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "white" }}
               contentArrowStyle={{ borderRight: "20px solid white" }}
-              iconStyle={{ background: "red", color: "#fff" }}
+              iconStyle={{ background: "black", color: "#fff" }}
               icon={<GiProcessor />}
             >
               <h2 className="vertical-timeline-element-title text-white font-bold text-center">
                 Communication & Feedback
-                <p className="text-orange-500">
+                <p className="text-orange-600">
                   Throughout the entire project lifecycle, we maintain open and
                   transparent communication with our clients. We gather feedback
                   at each stage to ensure that the product meets their

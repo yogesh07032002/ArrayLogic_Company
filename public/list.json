@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Software Development",
-    "title": "Crafting custom software solutions tailored to meet your business needs, driving innovation and efficiency.",
+    "title": "Crafting custom software  tailored to meet your business needs, driving innovation and efficiency.",
     "price": 0,
     "category": "Free",
     "image": "https://img.freepik.com/free-vector/web-development-isometric-concept-composition-illustration_1284-55922.jpg?ga=GA1.1.2113413071.1727246123&semt=ais_hybrid"
@@ -10,10 +10,10 @@
   {
     "id": 2,
     "name": "Application Development",
-    "title": "Building powerful mobile and web apps that deliver seamless user experiences and enhance engagement.",
+    "title": "Building powerful apps that deliver seamless user experiences and enhance engagement.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/cross-platform-software-concept-illustration_114360-7293.jpg?t=st=1728377819~exp=1728381419~hmac=998a54cbf3a627c0b32409fa9286e826d4c26c3c9ff8cab1fda662fe5c6b4718&w=996"
+    "image": "https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?t=st=1729765414~exp=1729769014~hmac=4e40bb8f4e641daa37b115517901039ef82fa2d8849555dfc3b421a099a80e77&w=996"
   },
   {
     "id": 3,
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Digital Marketing",
-    "title": "Amplifying your brand’s reach with targeted digital strategies that boost traffic, leads, and conversions.",
+    "title": "Amplifying your brand’s reach with targeted digital strategies that boost traffic and conversions.",
     "price": 0,
     "category": "Free",
     "image": "https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg?t=st=1728378175~exp=1728381775~hmac=faca80e41914da60ce05a8016764deda413ff48ed264a70e0a029ec4356d8591&w=996"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "name": "Cloud Services",
-    "title": "Offering scalable cloud solutions to streamline operations, enhance flexibility, and cut infrastructure costs.",
+    "title": "Offering scalable cloud solutions to streamline operations, enhance flexibility,cut infrastructure costs.",
     "price": 0,
     "category": "Free",
     "image": "https://img.freepik.com/free-photo/hologram-projector-screen-with-cloud-system-technology_53876-108502.jpg?t=st=1728378258~exp=1728381858~hmac=21e6bcd87e541171a0f8d7e18a6ecc09a03ed140884c171d63f2dfa9db3fcd5b&w=996"

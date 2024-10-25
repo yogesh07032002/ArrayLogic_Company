@@ -53,7 +53,7 @@ function Industry() {
           <h1 className="text-2xl md:text-4xl font-bold text-center mt-10 md:mt-15 text-orange-500">
           Our Industry Expertise
           </h1>
-          <p className="mt-5 px-5 text-rose-500">
+          <p className="mt-5 px-5 text-gray-800">
           ArrayLogic Softwares Pvt. Ltd. is a forward-thinking IT company
             delivering innovative solutions across multiple industries. From
             cutting-edge software development and cloud computing to data

@@ -6,9 +6,9 @@ function About() {
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 bg-white  pt-0 mt-0">
         <div className="w-full md:w-1/2 mt-0 md:mt-0">
           <div className="space-y-6">
-            <h1 className="text-2xl md:text-4xl font-bold text-orange-500 text-center md:mt-10">About Us</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-orange-500 text-center md:mt-10 md:mr-10">About Us</h1>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 text-black">
             <p>
               At <b className="text-blue-600">ArrayLogic Softwares Pvt. Ltd.</b> our expert engineers are
               dedicated to guiding customers through their digital

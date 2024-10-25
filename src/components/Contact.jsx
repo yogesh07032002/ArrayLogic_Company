@@ -64,7 +64,7 @@ function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full px-3 py-2 mb-4 border border-red-700 rounded-lg focus:outline-none focus:border-blue-600"
+              className="w-full px-3 py-2 mb-4 border border-2 border-black rounded-lg focus:outline-none focus:border-blue-600"
             />
 
             <label htmlFor="email">Email</label>
@@ -76,7 +76,7 @@ function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-3 py-2 mb-4 border border-red-700 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 mb-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
             />
 
             <label htmlFor="message">Message</label>
@@ -88,7 +88,7 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="w-full px-3 py-2 mb-4 border border-red-700 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 mb-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
             ></textarea>
 
             <button

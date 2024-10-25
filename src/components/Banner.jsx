@@ -15,7 +15,7 @@ function Banner() {
           </div>
           <div className="mt-5 md:ml-12">
             <p className="text-black">
-              At ArryLogic Softwares Pvt. Ltd. we specialize in delivering
+              At <b>ArryLogic Softwares Pvt. Ltd.</b> we specialize in delivering
               innovative and efficient solutions for web development, software
               development, and application development. Our team is dedicated to
               helping businesses streamline their digital presence and achieve
