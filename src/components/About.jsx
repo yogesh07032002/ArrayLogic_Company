@@ -23,7 +23,7 @@ function About() {
         </div>
         <div className="w-full md:w-1/2 ml-0 mt-0 md:mt-0 md:ml-24">
           <img
-            src="../../public/about1.png"
+            src="../../public/about.png"
             className="w-92 h-92"
             alt="Hey We Are LiftLogic"
           />
