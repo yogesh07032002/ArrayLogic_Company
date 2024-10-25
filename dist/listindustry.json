@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Academic Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/city-committed-education-collage-concept_23-2150062213.jpg?t=st=1728471281~exp=1728474881~hmac=d3bad70c34505d325dd90454346def0761ffd0ce854ef089780d15ce6db5cbd3&w=996"
+  },
+  {
+    "id": 2,
+    "name": "Health Care Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/medical-banner-with-doctor-wearing-equipment_23-2149611201.jpg?t=st=1728471527~exp=1728475127~hmac=e54991da460b61f1a54a657fd2af5a2f1ec9d508431b08cd96e980f3b9379927&w=996"
+  },
+  {
+    "id": 3,
+    "name": "Legal Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/closeup-shot-person-writing-book-with-gavel-table_181624-57173.jpg?t=st=1729764890~exp=1729768490~hmac=745f28e11990e3d985d6881a8ea5f977add0ee9e6e2815165fa2ef13b0f7dbc1&w=996"
+  },
+  {
+    "id": 4,
+    "name": "Real Estate Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/indian-city-buildings-scene_23-2151823146.jpg?t=st=1728471789~exp=1728475389~hmac=e2aa2bb677eabcb89d078f78b1705eeae2c8304bedfdfb9418b08628e2f6a7b1&w=996"
+  },
+  {
+    "id": 5,
+    "name": "Hospitality Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/old-hotel-sign_1101-890.jpg?t=st=1728471952~exp=1728475552~hmac=ea647c62c3f43a46bb363aee1777219d7d5b50da708fdbb5e7292626832273f6&w=996"
+  },
+  {
+    "id": 6,
+    "name": "IT Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010144.jpg?t=st=1729765200~exp=1729768800~hmac=b572d60d02bb0918ca7a857229470e83b6b907f9472f400763327df2e7bb3cd3&w=996"
+  },
+  {
+    "id": 7,
+    "name": "Manufacturing Industry",
+
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/workers-checking-parts-manufactured-factory_342744-140.jpg?t=st=1729765272~exp=1729768872~hmac=3fe63520f2df272bdd9d7be5ab351ec936174913d25c5df0312796bf8725ccd1&w=996"
+  },
+  {
+    "id": 8,
+    "name": "E-Commerce",
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/e-commerce-online-shopping-sale-concept_53876-64970.jpg?t=st=1728472132~exp=1728475732~hmac=c3a2a17809b4a72bc07221433d85bd7ab276d16e61e20e7b349d783c83986e56&w=1060"
+  }
+]

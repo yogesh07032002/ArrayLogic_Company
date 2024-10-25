@@ -33,7 +33,7 @@ function About() {
           <img
             src={about}
             className="w-92 h-92"
-            alt="Hey We Are LiftLogic"
+            alt="Hey We Are ArrayLogic"
           />
         </div>
       </div>
