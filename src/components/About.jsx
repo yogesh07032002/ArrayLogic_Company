@@ -1,9 +1,7 @@
-import About1 from "../../public/About1.png";
-
 function About() {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 bg-white  pt-0 mt-0">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 bg-white pt-0 mt-0">
         <div className="w-full md:w-1/2 mt-0 md:mt-0">
           <div className="space-y-6">
             <h1 className="text-2xl md:text-4xl font-bold text-orange-500 text-center md:mt-10 md:mr-10">About Us</h1>
@@ -25,8 +23,8 @@ function About() {
         </div>
         <div className="w-full md:w-1/2 ml-0 mt-0 md:mt-0 md:ml-24">
           <img
-            src={About1}
-            className="w-92 h-92 "
+            src="../../public/about1.png"
+            className="w-92 h-92"
             alt="Hey We Are LiftLogic"
           />
         </div>
