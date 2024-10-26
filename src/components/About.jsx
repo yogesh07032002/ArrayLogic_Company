@@ -1,4 +1,4 @@
-import about from '../../public/about.png';
+import Array from '../../public/Array.png';
 
 function About() {
   return (
@@ -31,7 +31,7 @@ function About() {
         </div>
         <div className="w-full md:w-1/2 ml-0 mt-0 md:mt-0 md:ml-24">
           <img
-            src={about}
+            src={Array}
             className="w-92 h-92"
             alt="Hey We Are ArrayLogic"
             
