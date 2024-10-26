@@ -18,7 +18,7 @@ function Banner() {
               At <b>ArryLogic Softwares Pvt. Ltd.</b> we specialize in delivering
               innovative and efficient solutions for web development, software
               development, and application development. Our team is dedicated to
-              helping businesses streamline their digital presence and achieve
+              help businesses streamline their digital presence and achieve
               success through cutting-edge technology and tailor-made services.
               From dynamic websites to complex software applications, we ensure
               quality, scalability, and performance in every project.
