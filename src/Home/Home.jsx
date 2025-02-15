@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Process from "../components/Process";
 import Services from "../components/Services";
+import TechStack from "../components/TechStack";
+import Testimonials from "../components/Testimonials";
 
 function Home() {
   return (
@@ -13,7 +15,9 @@ function Home() {
       <Banner />
       <About />
       <Services />
+      <TechStack/>
       <Process />
+      <Testimonials/>
       <Contact />
       <Footer />
       

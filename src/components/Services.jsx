@@ -8,16 +8,16 @@ import list from "../../public/list.json";
 function Services() {
   const filterData = list.filter((data) => data.category === "Free");
 
-  var settings = {
+  const settings = {
     dots: true,
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    speed: 600,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // Desktop
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -26,15 +26,14 @@ function Services() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768, // Tablet
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 480, // Mobile
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -44,23 +43,19 @@ function Services() {
   };
 
   return (
-    <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-10   ">
-       
-          <h1 className="text-2xl md:text-4xl font-bold text-center mb-5 md:mb-9 text-orange-500">
-            Services
-          </h1>
-      
+    <div className="max-w-screen-2xl container mx-auto px-5 md:px-20 py-14 bg-gradient-to-br ">
+      {/* Section Title */}
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 text-orange-600">
+        Services
+      </h1>
 
-        <div>
-          <Slider {...settings}>
-            {filterData.map((item) => (
-              <Cards item={item} key={item.id} />
-            ))}
-          </Slider>
-        </div>
-      </div>
-    </>
+      {/* Slider Section */}
+      <Slider {...settings}>
+        {filterData.map((item) => (
+          <Cards  item={item} key={item.id} />
+        ))}
+      </Slider>
+    </div>
   );
 }
 

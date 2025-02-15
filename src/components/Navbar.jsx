@@ -4,119 +4,121 @@ import logoo from "../../public/logoo.png";
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false); // Added state to control the dropdown
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
+      setSticky(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen); // Toggle dropdown visibility
-  };
+  const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   const navItems = (
     <>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/">Home</a>
       </li>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/About">About</a>
       </li>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/Services">Services</a>
       </li>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/Process">Process</a>
       </li>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/Industry">Industries</a>
       </li>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/Career">Career</a>
       </li>
-      <li className="hover:text-orange-500 rounded-xl">
+      <li className="hover:text-orange-500 rounded-lg">
         <a href="/Contact">Contact</a>
       </li>
     </>
   );
 
   return (
-    <>
-      <div
-        className={`max-w-screen-2xl container mx-auto md:px-15 px-5 fixed top-0 left-0 right-0 z-50 p-1 ${
-          sticky
-            ? "sticky-navbar shadow-md bg-slate-500 md:bg-black text-black md:text-white duration-300 transition-all ease-in-out"
-            : ""
-        }`}
-      >
-        <div className="navbar">
-          <div className="navbar-start">
-            <div className="dropdown">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost lg:hidden"
-                onClick={toggleDropdown} // Toggle dropdown on mobile button click
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              {dropdownOpen && ( // Render dropdown menu based on state
-                <ul
-                  tabIndex={0}
-                  className="menu menu-sm text-black dropdown-content bg-white rounded-box z-50 mt-2 w-52 p-2 shadow"
-                >
-                  {navItems}
-                </ul>
-              )}
-            </div>
-            <a className=" text-2xl font-bold cursor-pointer">
-              <img
-                src={logoo}
-                className="w-40 md:w-40 md:ml-7 h-auto"
-                alt="Logo"
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        sticky
+          ? "bg-black shadow-lg text-white"
+          : "bg-transparent text-black"
+      }`}
+    >
+      <div className="max-w-screen-2xl container mx-auto px-5 md:px-15 py-2">
+        <nav className="flex justify-between items-center">
+          {/* Logo */}
+          <a className="text-2xl font-bold">
+            <img
+              src={logoo}
+              className="w-30 md:w-40 h-10 md:ml-5 ml-10"
+              alt="Logo"
+            />
+          </a>
+
+          {/* Desktop Navigation */}
+          <ul className="hidden lg:flex space-x-8 font-medium">
+            {navItems}
+          </ul>
+
+          {/* Contact Button */}
+          <a
+            href="https://api.whatsapp.com/send?phone=7620162336"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-block bg-orange-500 text-white px-4 py-2 rounded-lg md:mr-5 hover:bg-orange-600 transition-all duration-300"
+          >
+            Contact
+          </a>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={toggleDropdown}
+            className="lg:hidden p-2 text-2xl rounded-md focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-16 6h16"
               />
-            </a>
-          </div>
-          <div className="navbar-end px-0">
-            <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-5 mx-24">{navItems}</ul>
-            </div>
-            <div>
+            </svg>
+          </button>
+        </nav>
+
+        {/* Mobile Dropdown */}
+        {dropdownOpen && (
+          <ul
+            className="lg:hidden mt-3 space-y-2 bg-white rounded-lg shadow-lg p-5 text-lg font-medium text-black"
+          >
+            {navItems}
+            <li>
               <a
-                className="bg-orange-500 text-white px-2 py-1 md:px-3 md:py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
-                target="_blank"
                 href="https://api.whatsapp.com/send?phone=7620162336"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-orange-500 text-white text-center py-2 rounded-lg hover:bg-orange-600 transition-all duration-300"
               >
                 Contact
               </a>
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
+        )}
       </div>
-    </>
+    </header>
   );
 }
 

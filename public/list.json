@@ -2,18 +2,18 @@
   {
     "id": 1,
     "name": "Software Development",
-    "title": "Crafting custom software  tailored to meet your business needs, driving innovation and efficiency.",
+    "title": "Crafting custom software tailored to meet your business needs, driving innovation and efficiency.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/web-development-isometric-concept-composition-illustration_1284-55922.jpg?ga=GA1.1.2113413071.1727246123&semt=ais_hybrid"
+    "image": "/images/software-development.jpg"
   },
   {
     "id": 2,
-    "name": "Application Development",
+    "name": "App Development",
     "title": "Building powerful apps that deliver seamless user experiences and enhance engagement.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?t=st=1729765414~exp=1729769014~hmac=4e40bb8f4e641daa37b115517901039ef82fa2d8849555dfc3b421a099a80e77&w=996"
+    "image": "/images/app-development.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "title": "Creating dynamic, responsive websites that captivate users and elevate your online presence.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg?t=st=1728378018~exp=1728381618~hmac=49a51a27789706d5a1240af8599b77b6d2c2066296fcea36a45d9806a8ca3756&w=996"
+    "image": "/images/web-development.jpg"
   },
   {
     "id": 4,
@@ -29,15 +29,15 @@
     "title": "Amplifying your brand’s reach with targeted digital strategies that boost traffic and conversions.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg?t=st=1728378175~exp=1728381775~hmac=faca80e41914da60ce05a8016764deda413ff48ed264a70e0a029ec4356d8591&w=996"
+    "image": "/images/digital-marketing.jpg"
   },
   {
     "id": 5,
     "name": "Cloud Services",
-    "title": "Offering scalable cloud solutions to streamline operations, enhance flexibility,cut infrastructure costs.",
+    "title": "Offering scalable cloud solutions to streamline operations, enhance flexibility, cut infrastructure costs.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-photo/hologram-projector-screen-with-cloud-system-technology_53876-108502.jpg?t=st=1728378258~exp=1728381858~hmac=21e6bcd87e541171a0f8d7e18a6ecc09a03ed140884c171d63f2dfa9db3fcd5b&w=996"
+    "image": "/images/cloud-services.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "title": "Optimizing customer relationships with tailored CRM systems that drive loyalty and growth.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/flat-design-hard-drive-illustration_23-2149356394.jpg?t=st=1728378330~exp=1728381930~hmac=1fad663f8f2f1ef026147c3f8aacdb3209106c769b60a22e22abea3e3e293fbf&w=996"
+    "image": "/images/crm-management.jpg"
   },
   {
     "id": 7,
@@ -53,6 +53,7 @@
     "title": "Leveraging data to unlock insights and make smarter, data-driven decisions for your business.",
     "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/illustration-social-media-concept_53876-18140.jpg?t=st=1728378438~exp=1728382038~hmac=e87ff0a5a5cbfe90af44fc8c3a4eeca705ee33e15440d27ce8a7de43704aefa3&w=1060"
+    "image": "/images/data-solutions.jpg"
   }
 ]
+

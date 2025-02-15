@@ -1,251 +1,222 @@
-import ServicePage2 from "../../public/ServicePage2.jpg";
-import ServicePic1 from "../../public/ServicePic1.png";
-import ServicePic2 from "../../public/ServicePic2.png";
-import ServicePic3 from "../../public/ServicePic3.png";
-import ServicePic4 from "../../public/ServicePic4.png";
-import ServicePic5 from "../../public/ServicePic5.png";
-import ServicePic6 from "../../public/ServicePic6.png";
-import ServicePic7 from "../../public/ServicePic7.png";
+import { FaBullhorn, FaChartLine, FaCloud, FaDatabase, FaGlobe, FaLaptopCode, FaMobileAlt, FaPenFancy, FaShoppingCart, FaTools, FaUsers, FaWordpress } from "react-icons/fa";
 
-function ServicePage() {
+const services = [
+  {
+    title: "SOFTWARE DEVELOPMENT",
+    icon: <FaLaptopCode />,
+    color: "bg-red-600",
+    features: [
+      "Custom Software Solutions",
+      "Enterprise Application Development",
+      "AI & Machine Learning Integration",
+      "Secure Web & Mobile Applications",
+      "Third-party API Development",
+      "Cloud & On-Premise Solutions",
+      "Scalable & High-Performance Software",
+      "End-to-End Software Consulting",
+    ],
+  },
+  {
+    title: "WEBSITE DEVELOPMENT",
+    icon: <FaGlobe />,
+    color: "bg-blue-600",
+    features: [
+      "Responsive Website Design",
+      "Static & Dynamic Websites",
+      "E-commerce Website Development",
+      "Domain, Hosting & SSL",
+      "SEO-Friendly Websites",
+      "CMS Development",
+      "Fast & Secure Web Solutions",
+      "Cross-Browser Compatibility",
+    ],
+  },
+  {
+    title: "APPLICATION DEVELOPMENT",
+    icon: <FaMobileAlt />,
+    color: "bg-green-600",
+    features: [
+      "Android & iOS App Development",
+      "React Native & Flutter Apps",
+      "E-commerce & Business Apps",
+      "Custom UI/UX Design",
+      "Third-party API Integrations",
+      "Security & Data Encryption",
+      "App Store Deployment & Optimization",
+      "Performance & Speed Optimization",
+    ],
+  },
+  {
+    title: "CRM MANAGEMENT",
+    icon: <FaDatabase />,
+    color: "bg-purple-600",
+    features: [
+      "Custom CRM Development",
+      "Lead & Customer Management",
+      "Automation & Workflow Management",
+      "Data Security & Compliance",
+      "Third-party CRM Integration",
+      "Cloud & On-Premise CRM Solutions",
+      "Role-Based Access Control",
+      "Real-Time Reports & Dashboards",
+    ],
+  },
+  {
+    title: "CLOUD SOLUTION",
+    icon: <FaCloud />,
+    color: "bg-teal-500",
+    features: [
+      "AWS, Google Cloud, Azure",
+      "Cloud Hosting & Deployment",
+      "Serverless Architecture",
+      "Cloud Backup & Disaster Recovery",
+      "API Gateway & Microservices",
+      "Cost Optimization & Monitoring",
+      "Scalable & Secure Cloud Apps",
+      "Hybrid & Multi-Cloud Solutions",
+    ],
+  },
+  {
+    title: "DATA SOLUTION",
+    icon: <FaChartLine />,
+    color: "bg-yellow-600",
+    features: [
+      "Big Data Analytics",
+      "Database Management & Optimization",
+      "Data Warehousing & ETL",
+      "AI-Powered Insights",
+      "Data Migration & Integration",
+      "Security & Compliance",
+      "Predictive Data Analysis",
+      "Real-Time Data Processing",
+    ],
+  },
+  {
+    title: "ECOMMERCE DEVELOPMENT",
+    icon: <FaShoppingCart />,
+    color: "bg-black",
+    features: [
+      "Unlimited Product Listings",
+      "Payment Gateway Integration",
+      "Content Management System",
+      "Admin & User Logins",
+      "Shopping Cart System",
+      "Order & Inventory Management",
+      "User-Friendly Navigation",
+      "Multi-Vendor Marketplace",
+    ],
+  },
+  {
+    title: "SOCIAL MEDIA MARKETING (SMM)",
+    icon: <FaUsers />,
+    color: "bg-indigo-700",
+    features: [
+      "Creating & Managing Social Pages",
+      "Market Analysis & Strategy",
+      "Targeted Ad Campaigns",
+      "Creative Graphic Designs",
+      "Analytics & Insights Reports",
+      "Budget-Friendly Promotions",
+      "Influencer & Brand Collaborations",
+      "Cross-Platform Social Media Presence",
+    ],
+  },
+  {
+    title: "DIGITAL MARKETING",
+    icon: <FaBullhorn />,
+    color: "bg-orange-600",
+    features: [
+      "Google Ads & PPC Campaigns",
+      "Email & SMS Marketing",
+      "Lead Generation Strategies",
+      "Conversion Rate Optimization",
+      "Content Marketing",
+      "SEO & Retargeting Strategies",
+      "Social Media Ads & Campaigns",
+      "Performance Tracking & Optimization",
+    ],
+  },
+  {
+    title: "WEBSITE MAINTENANCE & SUPPORT",
+    icon: <FaTools />,
+    color: "bg-gray-700",
+    features: [
+      "Regular Updates & Fixes",
+      "Security Enhancements",
+      "Performance Optimization",
+      "Backup & Recovery Solutions",
+      "Bug Fixes & Troubleshooting",
+      "Uptime Monitoring & Technical Support",
+      "Hosting & Server Maintenance",
+      "Website Speed Optimization",
+    ],
+  },
+  {
+    title: "WORDPRESS DEVELOPMENT",
+    icon: <FaWordpress />,
+    color: "bg-blue-800",
+    features: [
+      "Custom WordPress Themes",
+      "Plugin Development & Customization",
+      "WooCommerce Store Setup",
+      "SEO-Friendly Websites",
+      "Performance Optimization",
+      "Security & Backup Solutions",
+      "WordPress Migration & Upgrades",
+      "Multilingual & Accessibility Features",
+    ],
+  },
+  {
+    title: "CONTENT WRITING",
+    icon: <FaPenFancy />,
+    color: "bg-pink-600",
+    features: [
+      "SEO Optimized Articles",
+      "Website Content & Blogs",
+      "Product Descriptions",
+      "Social Media Captions & Posts",
+      "Technical & Business Writing",
+      "Creative Copywriting",
+      "Script & Video Content Writing",
+      "Press Releases & Email Copies",
+    ],
+  },
+];
+
+
+
+
+export default function Services() {
   return (
-    <>
-      <div className="bg-white text-black ">
-        <div className="text-2xl md:text-4xl font-bold text-center mt-20 ">
-          <img src={ServicePage2} className="" alt="Hey, we are LiftLogic" />
-        </div>
-        <div className="space-y-6 text-center mt-10">
-          <h1 className="text-4xl font-bold text-orange-500">Services</h1>
-        </div>
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-500 text-center ">
-                Web Development
-              </h2>
-              <p className=" mt-5 ">
-                At ArrayLogic Softwares Pvt. Ltd. our expert engineers are
-                dedicated to guiding customers through their digital
-                transformation journey. We are not just a software company; we
-                offer profound technology expertise, excellent delivery
-                capabilities, and in-depth domain knowledge across various
-                sectors. This enables us to efficiently and successfully deliver
-                solutions that drive customer success. We specialize in building
-                custom applications tailored to your specific business needs in
-                a cost-effective manner. Our commitment is to help you achieve
-                growth and success with innovative technology solutions.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2    md:ml-24">
-            <img
-              src={ServicePic1}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-
-        <hr className="border-2 border-orange-500 " />
-
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row-reverse">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl text-red-500 text-center">
-                Software Development
-              </h2>
-              <p className="mt-5">
-                At ArrayLogic Softwares Pvt. Ltd., we offer full-cycle software
-                development services designed to bring your unique business
-                ideas to life. Our team of experienced developers specializes in
-                building high-performance, scalable, and secure software
-                solutions tailored to meet your specific business requirements.
-                From custom application development to system integration, we
-                leverage the latest technologies and best practices to deliver
-                efficient, user-centric products. We are committed to ensuring
-                seamless software deployment and providing ongoing support,
-                helping you innovate, optimize operations, and achieve
-                sustainable growth in a competitive landscape.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 md:mr-24">
-            <img
-              src={ServicePic2}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-
-        <hr className="border-2 border-orange-500 " />
-
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-500 text-center">
-                Application Development
-              </h2>
-              <p className=" mt-5 ">
-                At ArrayLogic Softwares Pvt. Ltd., we specialize in crafting
-                custom applications that align perfectly with your business
-                needs. Our application development services cover everything
-                from initial concept to final deployment, ensuring that the
-                solutions we create are efficient, user-friendly, and scalable.
-                Whether its mobile apps, web apps, or enterprise solutions, we
-                utilize cutting-edge technologies to deliver innovative
-                applications that enhance your operations, engage your users,
-                and accelerate growth. Our team works closely with you to ensure
-                every application we develop helps you achieve your strategic
-                goals while maintaining a focus on quality, security, and
-                performance.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2    md:ml-24">
-            <img
-              src={ServicePic3}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-
-        <hr className="border-2 border-orange-500 text-center " />
-
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-10 flex flex-col md:flex-row-reverse">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl text-red-500 text-center">
-                Digital Marketing
-              </h2>
-              <p className="mt-5">
-                At ArrayLogic Softwares Pvt. Ltd., we offer comprehensive digital
-                marketing services designed to elevate your brand’s online
-                presence and drive meaningful engagement. From search engine
-                optimization (SEO) to social media marketing, pay-per-click
-                (PPC) advertising, and content marketing, our team utilizes
-                data-driven strategies to help you reach your target audience
-                effectively. We tailor each campaign to align with your business
-                goals, ensuring increased visibility, higher conversion rates,
-                and sustainable growth. Whether you are looking to build brand
-                awareness, generate leads, or boost sales, our innovative
-                digital marketing solutions deliver measurable results that
-                propel your business forward.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 md:mr-24">
-            <img
-              src={ServicePic4}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-
-        <hr className="border-2 border-orange-500 " />
-
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-500 text-center">
-                Cloud Services
-              </h2>
-              <p className=" mt-5 ">
-                At ArrayLogic Softwares Pvt. Ltd., we provide top-tier cloud
-                services that enable your business to scale, innovate, and
-                remain competitive. Our cloud solutions include infrastructure
-                as a service (IaaS), platform as a service (PaaS), and software
-                as a service (SaaS), designed to optimize your operations and
-                enhance productivity. Whether you are migrating to the cloud,
-                developing cloud-native applications, or optimizing your current
-                cloud infrastructure, our experts deliver secure, flexible, and
-                cost-effective solutions. With a focus on reliability and
-                performance, we help you harness the full potential of cloud
-                technology, ensuring seamless integration and scalability for
-                your evolving business needs.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2    md:ml-24">
-            <img
-              src={ServicePic5}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-
-        <hr className="border-2 border-orange-500 " />
-
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row-reverse">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl text-red-500 text-center">
-                CRM Solutions{" "}
-              </h2>
-              <p className="mt-5">
-                At ArrayLogic Softwares Pvt. Ltd., we understand that effective
-                customer relationship management is key to driving business
-                success. Our CRM solutions are designed to help you build and
-                maintain strong relationships with your customers by
-                streamlining communication, automating tasks, and providing
-                valuable insights into customer behavior. We offer customizable
-                CRM systems that integrate seamlessly with your existing
-                processes, enabling you to manage leads, track interactions, and
-                analyze data effectively. With our CRM solutions, you can
-                enhance customer engagement, improve service delivery, and make
-                informed decisions that foster long-term loyalty and growth for
-                your business.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 md:mr-24">
-            <img
-              src={ServicePic6}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-
-        <hr className="border-2 border-orange-500 " />
-
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row ">
-          <div className="w-full md:w-1/2 mt-0 md:mt-10">
-            <div className="mt-8">
-              <h2 className="font-bold text-2xl  text-red-500 text-center">
-                Data Solutions
-              </h2>
-              <p className=" mt-5 ">
-                At ArrayLogic Softwares Pvt. Ltd., we offer comprehensive data
-                solutions that empower businesses to harness the full potential
-                of their data assets. Our services include data integration,
-                data warehousing, data analytics, and business intelligence, all
-                designed to provide actionable insights and drive informed
-                decision-making. We help you streamline data management
-                processes, ensuring data accuracy and accessibility across your
-                organization. By leveraging advanced analytics and visualization
-                tools, our team enables you to uncover trends, optimize
-                operations, and enhance customer experiences. With our data
-                solutions, you can transform raw data into strategic advantages,
-                enabling your business to thrive in a data-driven world.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2    md:ml-24">
-            <img
-              src={ServicePic7}
-              className="w-92 h-92"
-              alt="Hey We Are LiftLogic"
-            />
-          </div>
-        </div>
-        <hr className="border-2 border-orange-500 mt-5 " />
+    <div className="relative bg-white py-16 px-6">
+      {/* Title Section */}
+      <div className="text-center mb-10">
+        <h2 className="text-4xl font-bold text-gray-900 inline-block border-b-4 border-orange-600 pb-2 mt-5">
+          WHAT WE <span className="bg-orange-600 text-white px-2">DO</span>
+        </h2>
       </div>
-    </>
+
+      {/* Cards Grid */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {services.map((service, index) => (
+          <div key={index} className="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-gray-900">
+            <div className={`w-16 h-16 ${service.color} text-white text-3xl flex items-center justify-center rounded-full mx-auto -mt-12`}>
+              {service.icon}
+            </div>
+            <h3 className="text-xl font-bold text-black mt-4 mb-2">{service.title}</h3>
+            <ul className="text-black  text-sm space-y-1">
+              {service.features.map((feature, i) => (
+                <li key={i} className="border-b  py-1">{feature}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {/* Call Button */}
+      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -rotate-90 bg-orange-500 text-white px-4 py-2 text-sm font-semibold cursor-pointer">
+        <a href="tel:7620162336">Call: 7620162336</a>
+      </div>
+    </div>
   );
 }
-
-export default ServicePage;

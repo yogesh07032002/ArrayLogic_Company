@@ -7,77 +7,92 @@ import Slider from "react-slick";
 import listindustry from "../../public/listindustry.json";
 
 function Industry() {
-    const filterData = listindustry.filter((data) => data.category === "Free");
+  const filterData = listindustry.filter((data) => data.category === "Free");
 
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true, // Enables infinite scrolling
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true, // Centers single card
+          arrows: false, // Hides arrows for mobile
         },
       },
     ],
+    appendDots: (dots) => (
+      <div>
+        <ul className="flex justify-center space-x-2 mt-4">{dots}</ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div className="w-4 h-4 bg-gray-700 rounded-full opacity-80 hover:opacity-100 transition duration-300"></div>
+    ),
   };
+
   return (
-    <>
-      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-white">
-        <div className="mt-20 px-2 ">
-          <img className="" src={IndustryPic} alt="Comming Soon"></img>
-        </div>
-        <div>
-          <h1 className="text-2xl md:text-4xl font-bold text-center mt-10 md:mt-15 text-orange-500">
-          Our Industry Expertise
+    <div className="max-w-screen-2xl container mx-auto mt-14 bg-white">
+      {/* Hero Section */}
+      <div className="relative w-full h-80 md:h-96">
+        <img
+          className="w-full h-full object-cover rounded-lg"
+          src={IndustryPic}
+          alt="Industry Expertise"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-2">
+            Industry Expertise
           </h1>
-          <p className="mt-5 px-5 text-gray-800">
-          ArrayLogic Softwares Pvt. Ltd. is a forward-thinking IT company
-            delivering innovative solutions across multiple industries. From
-            cutting-edge software development and cloud computing to data
-            analytics, artificial intelligence, and machine learning, we provide
-            customized IT services that help businesses thrive in the digital
-            age.<br></br><br/> Our expertise spans industries such as healthcare, finance,
-            retail, education, and more, empowering organizations to streamline
-            operations, enhance security, and drive growth through technology.
-            Partner with us to leverage the power of IT in transforming your
-            business and staying ahead in todays competitive market.
+          <p className="text-lg md:text-xl max-w-2xl">
+            Empowering businesses with cutting-edge IT solutions across multiple industries.
           </p>
         </div>
-        <div>
-        <div className="mt-10 mb-14 md:mb-0  md:ml-20 px-10" >
-          <Slider {...settings}>
-            {filterData.map((item) => (
-              <Cards item={item} key={item.id} />
-            ))}
-          </Slider>
-        </div>
-            
-        </div>
       </div>
-    </>
+
+      {/* About Industry Section */}
+      <div className="text-center px-8 py-12 md:py-20 bg-gray-50 rounded-lg shadow-md">
+        <h2 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text mb-6">
+          Transforming Industries with Technology
+        </h2>
+        <p className="text-lg md:text-xl text-gray-800 max-w-4xl mx-auto leading-relaxed tracking-wide">
+          At <span className="font-semibold text-orange-600">ArrayLogic Softwares Pvt. Ltd.</span>, we lead technological innovation,  
+          delivering industry-specific solutions in <span className="font-semibold">healthcare, finance, retail, education, and more.</span>  
+          We empower businesses with AI, machine learning, cloud computing, and software development, ensuring streamlined  
+          operations, enhanced security, and sustainable growth.
+        </p>
+      </div>
+
+      {/* Industry Cards Slider */}
+      <div className="px-4 md:px-10 py-8">
+        <Slider {...settings}>
+          {filterData.map((item) => (
+            <div
+              className="px-4 py-6 hover:scale-105 transition-transform duration-300 w-full md:w-auto"
+              key={item.id}
+            >
+              <Cards item={item} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
   );
 }
 

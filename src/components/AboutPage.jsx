@@ -4,68 +4,72 @@ import ScrollToTop from "react-scroll-to-top";
 function AboutPage() {
   return (
     <>
-      <div className="bg-white text-black">
-        <div className="text-2xl md:text-4xl font-bold text-center mt-20 ">
-          <img src={AboutPic} className="" alt="Hey, we are LiftLogic" />
-        </div>
-        <div className="">
-          <div className="space-y-6 mt-10 md:mt-15">
-            <h1 className="text-xl md:text-4xl text-center font-bold text-orange-500">
-              About Us
-            </h1>
-          </div>
-          <div className="mt-8  px-10">
-            <p>
-              👉Welcome to ArrayLogic Softwares Pvt. Ltd., your premier partner in
-              innovative software solutions. Founded with a mission to empower
-              businesses through technology, we are dedicated to delivering
-              high-quality IT services that drive operational efficiency and
-              foster growth.<br/><br/>  👉Our diverse portfolio includes software
-              development, cloud computing, data analytics, artificial
-              intelligence, and machine learning, enabling us to provide
-              comprehensive solutions tailored to meet the unique needs of our
-              clients.<br/><br/>  👉At ArrayLogic, we pride ourselves on our client-centric
-              approach. We understand that each organization has its challenges
-              and goals, which is why we take the time to listen and collaborate
-              closely with our clients. Our expert team of developers,
-              designers, and strategists is committed to transforming your ideas
-              into reality, providing you with the tools and insights needed to
-              thrive in today’s fast-paced digital landscape. <br/><br/> 👉Our industry
-              expertise spans various sectors, including healthcare, finance,
-              retail, education, and manufacturing. By leveraging advanced
-              technologies, we help organizations streamline their operations,
-              enhance productivity, and improve customer experiences.<br/><br/>  👉Our
-              solutions are not just about technology; they are about delivering
-              measurable outcomes that align with your business objectives. In
-              an ever-evolving technological environment, we are committed to
-              continuous learning and innovation. Our team stays at the
-              forefront of industry trends, ensuring that we can provide the
-              latest solutions and insights to our clients. <br/><br/> 👉We believe that
-              technology should be a catalyst for change, and we are here to
-              guide you through that transformation. Join us on this exciting
-              journey, and let LiftLogic Softwares Pvt. Ltd. be your trusted
-              ally in navigating the complexities of the digital world.
-              <br/><br/>
-              👉Together, we can unlock new opportunities for growth and success,
-              helping your business achieve its full potential. Reach out to us
-              today to discover how we can help you leverage technology to drive
-              innovation and elevate your organization to new heights.
-            </p>
-          </div>
-          <div>
-            <hr className="border-2 border-orange-500 mt-14  " />
+      <div className="bg-gray-50 text-gray-800 py-12">
+        <div className="mt-10 px-4 sm:px-6 lg:px-8">
+          <section className="flex flex-col md:flex-row items-center md:space-x-10">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <img src={AboutPic} className="rounded-xl shadow-lg w-full" alt="About LiftLogic" />
+            </div>
+            <div className="md:w-1/2">
+              <h1 className="text-3xl md:text-5xl font-extrabold text-orange-600 mb-4">Who We Are</h1>
+              <p className="text-lg leading-relaxed mb-4">
+                Welcome to <strong>ArrayLogic Softwares Pvt. Ltd.</strong>, your dedicated partner in cutting-edge software solutions. We are passionate about driving business growth and operational efficiency through innovative technology.
+              </p>
+              <p className="text-lg leading-relaxed mb-4">
+                With a team of highly skilled developers, designers, and strategists, we specialize in delivering robust, scalable, and customized digital solutions. From enterprise-level applications to cloud-based services, we empower businesses to thrive in an ever-evolving digital landscape.
+              </p>
+              <p className="text-lg leading-relaxed mb-4">
+                Our core values—<strong>innovation, integrity, and excellence</strong>—drive our approach. We believe in fostering long-term partnerships by delivering high-quality software products that enhance user experiences and streamline business operations.
+              </p>
+            </div>
+          </section>
+
+          <section className="mt-12 space-y-8">
+            <div>
+              <h2 className="text-2xl font-bold text-orange-500 mb-2">Our Expertise</h2>
+              <p>
+                We offer a broad range of services, including software development, cloud solutions, data analytics, artificial intelligence, and machine learning. Our tailored solutions meet the unique demands of diverse industries such as healthcare, finance, retail, education, and manufacturing.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-orange-500 mb-2">Client-Centric Approach</h2>
+              <p>
+                At ArrayLogic, we believe in building strong partnerships. Our team of expert developers, designers, and strategists work closely with clients to transform ideas into impactful solutions that foster business growth.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-orange-500 mb-2">Innovation & Growth</h2>
+              <p>
+                We stay ahead of technological trends, ensuring our clients benefit from the latest advancements. Our commitment to continuous learning and innovation helps us deliver measurable outcomes that align with your business goals.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-orange-500 mb-2">Join Us</h2>
+              <p>
+                Let <strong>LiftLogic Softwares Pvt. Ltd.</strong> be your guide in navigating the complexities of the digital world. Together, we'll unlock new opportunities and help your business achieve its full potential.
+              </p>
+            </div>
+          </section>
+
+          <div className="mt-12">
+            <hr className="border-t-4 border-orange-600 w-1/2 mx-auto" />
           </div>
         </div>
       </div>
+
       <ScrollToTop
         smooth
-        className=""
+        className="flex justify-center items-center"
         style={{
-          backgroundColor: "blue",
-          color: "white",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          backgroundColor: "#F97316",
+          color: "black",
+          width: "50px",
+          height: "50px",
+          borderRadius: "9999px",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       />
     </>

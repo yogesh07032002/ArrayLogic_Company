@@ -1,57 +1,71 @@
+import { FaBriefcase, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+
 import CareerPic from "../../public/CareerPic.jpg";
 
 function Career() {
   return (
-    <>
-      <div className="max-w-screen-2xl container mx-auto  px-1 md:px-0  md:pb-20 bg-white text-black">
-        <div className="mt-20 ">
-          <img src={CareerPic} alt="Comming Soon"></img>
-        </div>
-        <div className="">
-          <h1 className="text-2xl md:text-4xl font-bold text-center mt-10 md:mt-15">
-            Current Openings
-          </h1>
-          <h2 className="text-xl md:text-2xl font-bold text-center mt-3 md:mt-15 text-orange-600">
-            ❤️Shape the future with us!👉
-          </h2>
-          <p className="  text-center mt-2 md:mt-10 ">
-            At ArrayLogic Softwares Pvt. Ltd., we are always on the lookout for
-            talented individuals ready to make a difference in the tech world.
-            Whether you are a seasoned professional or a fresh graduate, we
-            offer exciting career opportunities in software development, data
-            science, cloud computing, and more. Join our dynamic, fast-paced
-            environment where innovation thrives, and your skills can grow to
-            new heights. Be a part of a team that shapes the future of
-            technology. Apply today and help us build the next big thing!
+    <div className="max-w-screen-2xl mx-auto bg-white mt-14">
+      {/* Hero Section */}
+      <div className="relative">
+        <img
+          src={CareerPic}
+          alt="Career at ArrayLogic"
+          className="w-full h-[350px] md:h-[500px] lg:h-[700px] object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-center text-white px-4 ">
+          <h1 className="text-4xl md:text-6xl font-extrabold">Join Our Team</h1>
+          <p className="text-lg md:text-2xl mt-4 max-w-2xl">
+            We’re looking for passionate innovators ready to shape the future of technology.
           </p>
-          <div>
-            <p className="text-center text-2xl font-bold mt-5 md:mt-5 ">
-              Send Your CV 👇<br></br>
-            </p>
-            {/* <div className="md:flex md:flex-row md:justify-between w-full md:px-40 md:mt-10">
-              <div className="md:text-left mt-3 text-red-700 md:mt-0 font-bold text-center">
-                📧&nbsp;hr@arraylogic.com
-              </div>
-              <div className="md:text-right mt-3 md:mb-0 text-red-700 font-bold text-center pb-5 md:pb-0">
-                📞+917620162336
-              </div>
-            </div> */}
-            <div className="mt-5 w-full md:flex md:flex-row md:justify-between md:px-40 md:mt-7 ">
-              <div className="border-2 border-black p-5 rounded-md w-full text-center md:text-left mt-3 text-red-700 md:mt-0  ">
-                <div
-                  className="text-orange-500 text-2xl "
-                >
-                  📧&nbsp;hr@arraylogic.in
-                </div>
-                <div className="text-orange-500 text-2xl  md:text-right mt-0 md:mb-0  text-center pb-5 md:pb-0">
-                  📞+917620162336
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      {/* Career Opportunities Section */}
+      <div className="py-16 px-6 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
+          Why Work With Us?
+        </h2>
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto mt-4">
+          At <span className="font-semibold text-orange-600">ArrayLogic Softwares</span>, we believe in creativity, growth, and teamwork. Join us to build cutting-edge solutions in a dynamic environment.
+        </p>
+
+        {/* Career Benefits Grid */}
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition">
+            <FaBriefcase className="text-5xl text-orange-500 mx-auto" />
+            <h3 className="text-xl font-semibold mt-4">Career Growth</h3>
+            <p className="text-gray-600 mt-2">Opportunities to learn, grow, and lead.</p>
+          </div>
+
+          <div className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition">
+            <FaBriefcase className="text-5xl text-orange-500 mx-auto" />
+            <h3 className="text-xl font-semibold mt-4">Exciting Projects</h3>
+            <p className="text-gray-600 mt-2">Work on cutting-edge technology and real-world solutions.</p>
+          </div>
+
+          <div className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition">
+            <FaBriefcase className="text-5xl text-orange-500 mx-auto" />
+            <h3 className="text-xl font-semibold mt-4">Collaborative Culture</h3>
+            <p className="text-gray-600 mt-2">Innovate and grow in a supportive environment.</p>
           </div>
         </div>
       </div>
-    </>
+
+      {/* Contact Info Section */}
+      <div className="bg-gradient-to-r from-orange-500 to-red-500 py-12 text-center text-white">
+        <h2 className="text-3xl font-bold">Get In Touch</h2>
+        <p className="text-lg mt-2">Reach out to our HR team directly.</p>
+
+        <div className="mt-6 space-y-4">
+          <p className="text-lg flex items-center justify-center">
+            <FaEnvelope className="mr-2" /> hr.arraylogic@gmail.com
+          </p>
+          <p className="text-lg flex items-center justify-center">
+            <FaPhoneAlt className="mr-2" /> +91 7620162336
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
 
